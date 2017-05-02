@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.alfahmi.topupwithcode.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+	
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="200dp"
+			android:orientation="horizontal"
+			android:gravity="center|top"
+			android:layout_alignParentTop="true"
+			android:background="@color/colorPrimary"
+			android:padding="15dp" >
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="35dp"
+				android:textSize="25dp"
+				android:textColor="#ffffff"
+				android:text="TopupWithQRCode"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center|top"
+			android:background="@drawable/alf_background"
+			android:padding="15dp"
+			android:layout_marginTop="150dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="1dp"
+				android:orientation="vertical" >
+				
+				<Button
+					android:layout_width="70dp"
+					android:layout_height="70dp"
+					android:layout_marginTop="20dp"
+					android:paddingRight="5dp"
+					android:id="@+id/alfahmi_scan"
+					android:background="@drawable/ic_qrcode"
+					android:text=" " />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2dp"
+					android:textSize="23dp"
+					android:textColor="#000000"
+					android:text="SCAN"/>
+				
+
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="7dp"
+				android:orientation="horizontal" >
+				<ImageView
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:paddingRight="20dp"
+					android:src="@drawable/ic_account_outline" />
+				<EditText
+					android:id="@+id/alfahmi_no_chip"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:editable="false"
+					android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:text="081234567890"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="7dp"
+				android:orientation="horizontal" >
+				<ImageView
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:paddingRight="20dp"
+					android:src="@drawable/ic_cart_outline" />
+				<EditText
+					android:id="@+id/alfahmi_mkios"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:editable="false"
+					android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:text="MKIOS V5"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+				</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="7dp"
+				android:orientation="horizontal" >
+
+				<ImageView
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:paddingRight="20dp"
+					android:src="@drawable/ic_numeric" />
+				<EditText
+					android:id="@+id/alfahmi_pin"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:editable="false"
+					android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:text="1234"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal" >
+
+				<Button
+					style="@style/AppTheme.Button"
+					android:id="@+id/alfahmi_cek_stok"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:text="  CEK STOCK  " />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12dp"
+			android:gravity="center"
+			android:layout_centerHorizontal="true"
+			android:padding="5dp"
+			android:layout_alignParentBottom="true"
+			android:text="Powered by : Fahmi Ahmad Fauzi"/>
+		
+</RelativeLayout>
