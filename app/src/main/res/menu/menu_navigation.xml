@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
+		<item
+            android:id="@+id/alfahmi_menu_return_stock"
+            android:title="Return Stock"
+            android:icon="@drawable/ic_return_stock"/>
+		<item
+            android:id="@+id/alfahmi_menu_change_pin"
+            android:title="Change Pin"
+            android:icon="@drawable/ic_change_pin"/>
         <item
             android:id="@+id/alfahmi_menu_settings"
             android:title="Settings"
@@ -8,10 +16,22 @@
         <item
             android:id="@+id/alfahmi_menu_trx"
             android:title="Trx List"
-            android:icon="@drawable/ic_format_list_numbers"/>
+            android:icon="@drawable/ic_transaction_list"/>
+		<item
+            android:id="@+id/alfahmi_menu_source"
+            android:title="Source Code"
+            android:icon="@drawable/ic_github"/>
+		<item
+            android:id="@+id/alfahmi_menu_update"
+            android:title="Update"
+            android:icon="@drawable/ic_arrow_up_bold"/>
+		<item
+            android:id="@+id/alfahmi_menu_about"
+            android:title="About"
+            android:icon="@drawable/ic_information"/>
         <item
             android:id="@+id/alfahmi_menu_exit"
             android:title="Exit"
-            android:icon="@drawable/ic_logout"/>
+            android:icon="@drawable/ic_exit"/>
     </group>
 </menu>

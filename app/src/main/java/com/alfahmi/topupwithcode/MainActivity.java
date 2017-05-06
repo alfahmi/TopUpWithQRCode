@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	String PhoneNumber, Price, DateTrx;
 	String SQLiteQuery;
 	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,6 +128,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                    		Intent Pengaturan = new Intent(MainActivity.this, com.alfahmi.topupwithcode.SettingsActivity.class);
 						startActivity(Pengaturan);
 						finish();
+						break;
+					case R.id.alfahmi_menu_return_stock:
+						drawerLayout.closeDrawers();
+                   		Intent ReturnStock = new Intent(MainActivity.this, com.alfahmi.topupwithcode.ReturnStockActivity.class);
+						startActivity(ReturnStock);
 						break;
                     case R.id.alfahmi_menu_trx:
 						drawerLayout.closeDrawers();

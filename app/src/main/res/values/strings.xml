@@ -3,4 +3,9 @@
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+	<string name="alfahmi__scan_activity">Scan</string>
+	<string name="alfahmi__settings_activity">Settings</string>
+	<string name="alfahmi__trx_list_activity">Transaction</string>
+	<string name="alfahmi__return_stock_activity">Return Stock</string>
+	
 </resources>

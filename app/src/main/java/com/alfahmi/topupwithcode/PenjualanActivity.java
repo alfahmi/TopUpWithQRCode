@@ -14,6 +14,7 @@ import android.widget.FilterQueryProvider;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.view.*;
+import java.io.*;
 
 
 public class PenjualanActivity extends AppCompatActivity {
@@ -22,7 +23,9 @@ public class PenjualanActivity extends AppCompatActivity {
     SQLiteDatabase SQLITEDATABASE;
     Cursor cursor;
     SQLiteListAdapter ListAdapter ;
-
+	private static String DB_PATH = "/data/data/com.alfahmi.topupwithcode/databases/";
+	private static String DB_NAME = "AlfahmiDataBase";
+	
     ArrayList<String> ID_ArrayList = new ArrayList<String>();
     ArrayList<String> NAME_ArrayList = new ArrayList<String>();
     ArrayList<String> PHONE_ArrayList = new ArrayList<String>();
@@ -102,7 +105,8 @@ public class PenjualanActivity extends AppCompatActivity {
 				onBackPressed();
 				break;
 			case R.id.alfahmi__action_delete:
-				//SQLITEDATABASE.delete(AlfahmiDataBase, Context.MODE_PRIVATE, null);
+				SQLiteDatabase.deleteDatabase(new File(DB_PATH + DB_NAME));
+				cursor.requery();
 				return true;
 			default:
 				return super.onOptionsItemSelected(item);
